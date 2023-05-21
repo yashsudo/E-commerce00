@@ -1,0 +1,8 @@
+#error {
+    @include flexBoxify(row, center, center);
+
+    img {
+        max-width: 30%;
+    }
+
+}

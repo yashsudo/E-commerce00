@@ -1,0 +1,111 @@
+#cart_card {
+    width: 100%;
+    @include flexBoxify(row, center, space-between);
+    padding: 1rem 2rem;
+    border-radius: 0.2rem;
+
+    box-shadow: 0px 10px 50px rgba(70, 70, 70, 0.08);
+
+    .eliminated_price {
+        margin-right: 0;
+    }
+
+    .percent_off {
+        margin-bottom: 1rem;
+    }
+}
+
+#cart_card+#cart_card {
+    margin-top: 30px;
+}
+
+.cart_image_container {
+    width: 25%;
+}
+
+.cart_image {
+    min-height: 120px;
+    max-width: 150px;
+    // background: url('../../../public/images/vr.png') no-repeat center / cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+
+.cart_info_box {
+    width: 75%;
+    @include flexBoxify(row, center, center);
+}
+
+.cart_sec {
+    width: 100%;
+    @include flexBoxify(row, center, center);
+}
+
+.cart_sec_1 {
+    @include flexBoxify(column, flex-start, center);
+}
+
+.cart_sec_2 {
+    @include flexBoxify(column, flex-end, center);
+}
+
+
+
+// .cart_top {
+//     width: 100%;
+//     @include flexBoxify(column, center, center);
+// }
+
+// .cart_row {
+//     margin-bottom: 10px;
+//     width: 100%;
+//     @include flexBoxify(row, center, space-between);
+
+//     .small_alert {
+//         margin-bottom: 0;
+//     }
+// }
+
+// .cart_discount {
+//     @include flexBoxify(row, center, center);
+// }
+
+.cart_title {
+    font-weight: 700;
+}
+
+.cart_item_name {
+    color: $accent-red;
+}
+
+.counter {
+    @include flexBoxify(row, center, center);
+}
+
+.counter_button {
+    height: 20px;
+    width: 20px;
+    background-color: $accent-gray-font-dark;
+    border: none;
+    border-radius: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+}
+
+.counter_num {
+    height: 20px;
+    width: 20px;
+    @include flexBoxify(row, center, center);
+    border-radius: 2px;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.cart_price {
+    font-weight: 900;
+    font-size: 1.2rem;
+}

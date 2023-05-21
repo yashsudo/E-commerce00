@@ -1,0 +1,38 @@
+
+#search_bar {
+    height: 80px;
+    background-color: #f5f5f5;
+    @include flexBoxify(row, center, center);
+
+    .container {
+        width: 50%;
+    }
+
+    .general_button:nth-child(2) {
+        @include flexBoxify(row, center, center);
+        background-color: $accent-green;
+        border: none;
+        color: white;
+        span {
+            margin-left: 0.5rem;
+        }
+
+        &:hover {
+            background-color: aqua;
+        }
+    }
+
+    .text_box {
+        width: 100%;
+    }
+}
+
+.search_bar_item + .search_bar_item {
+    margin-left: 0.5rem;
+}
+
+.search_bar_item {
+    border: 2px solid $accent-gray-font;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+}
